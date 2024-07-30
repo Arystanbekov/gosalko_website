@@ -1,0 +1,217 @@
+/* style.licenze.css */
+
+.page__body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+.header_licenze {
+    background-color: #141b41;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.a_class {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main_licenze {
+    padding: 2em;
+    background-color: #fff;
+}
+
+section#licensing {
+    margin-bottom: 2em;
+}
+
+
+.document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; /* Уменьшенный промежуток между элементами */
+}
+
+.document-item {
+    background-color: #f9f9f9;
+    padding: 0.5em; /* Уменьшенные отступы внутри блока */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9em; /* Уменьшенный размер шрифта */
+}
+
+.document-item h3 {
+    font-size: 1em; /* Уменьшенный размер шрифта заголовков */
+}
+
+strong {
+    color: #141b41; 
+}
+
+
+
+
+
+
+.footer {
+    background-color: #141841;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-info {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .footer-info img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .footer-info h3 {
+    margin: 0;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  .social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #ddd;
+  }
+  
+  .footer-navigation {
+    margin-left: 30px;
+  }
+  
+  .footer-navigation h4 {
+    margin: 0 0 10px 0;
+  }
+  
+  .footer-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-navigation li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-navigation a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-navigation a:hover {
+    color: #ddd;
+  }
+  
+  .footer-contact {
+    margin-left: 30px;
+  }
+  
+  .footer-contact h4 {
+    margin: 0 0 10px 0;
+  }
+  
+  .footer-contact p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    position: absolute; /* Position the social icons absolutely */
+    bottom: 20px; /* Distance from the bottom */
+    left: calc(1000px + 5%); /* Distance from the left */
+    /* Calculate left position as 20px + 5% of footer width */
+    display: flex; /* Arrange icons in a row */
+    align-items: center; /* Vertically center icons */
+  }
+  
+  .social-icons a {
+    font-size: 24px; /* Increased icon size */
+    color: #ddd; /* Red color for icons */
+    margin-right: 15px; /* Increased spacing between icons */
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }
+
+  .social-icons a:hover,
+  .social-icons a:focus { /* Target hover and focus states */
+    color: #483d8b; /* Change color to white on hover/focus */
+  }
+
+  .social-icons1 {
+    display: flex; /* Arrange icons in a row */
+    align-items: center; /* Vertically center icons */
+  }
+  
+  .social-icons1 a {
+    font-size: 24px; /* Increased icon size */
+    color: #ddd; /* Red color for icons */
+    margin-right: 15px; /* Increased spacing between icons */
+    transition: color 0.2s
+  }
+
+  .social-icons1 a:hover,
+.social-icons1 a:focus { /* Target hover and focus states */
+  color: #483d8b; /* Change color to white on hover/focus */
+}
+  
+  .social-icons1 a:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лицензии по регионам</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лицензии по регионам</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([42.882004, 74.582748], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Установка границ карты на Кыргызстан
+        var bounds = [
+            [39.2796, 69.2850], // юго-западный угол
+            [43.2313, 80.2260]  // северо-восточный угол
+        ];
+        map.fitBounds(bounds);
+
+        // Добавление маркеров с данными о лицензиях
+        var regions = [
+            {name: "Регион 1", coords: [42.87, 74.60], licenses: 50},
+            {name: "Регион 2", coords: [42.35, 73.82], licenses: 30},
+            {name: "Регион 3", coords: [41.16, 75.46], licenses: 40},
+            {name: "Регион 4", coords: [40.94, 73.00], licenses: 20},
+            {name: "Регион 5", coords: [42.80, 75.24], licenses: 60},
+            {name: "Регион 6", coords: [42.47, 76.14], licenses: 10},
+            {name: "Регион 7", coords: [41.52, 75.76], licenses: 25}
+        ];
+
+        regions.forEach(function(region) {
+            L.marker(region.coords).addTo(map)
+                .bindPopup(region.name + "<br>Количество лицензий: " + region.licenses);
+        });
+    </script>
+</body>
+</html>
