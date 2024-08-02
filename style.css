@@ -98,6 +98,20 @@ margin-bottom: 20px;
   font-size: 40px;
   font-weight: 700;
   line-height: 125%;
+  margin: 370px 30px auto 30px;
+}
+
+.title_hover {
+  color: #ddd; /* Изначальный цвет */
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  text-decoration: none; /* Убираем подчеркивание по умолчанию */
+  transition: text-decoration 0.3s ease; /* Плавный переход */
+}
+
+.title_hover:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
 }
 
 .section__title-light {
@@ -425,43 +439,6 @@ background-color: #141841;
 
 
 
-  /* style.licenze.css */
-  .h_class {
-    color: #dddddd;
-  }
-
-  .page__body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-  }
-  
-  .header_licenze {
-    background-color: #141b41;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-  }
-  
-  .list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .a_class {
-    color: #dddddd;
-    text-decoration: none;
-    font-size: 19px;
-  }
-  .a_class:hover {
-    background: darkblue;
-  }
-  
 
   
   
@@ -614,69 +591,7 @@ a {
   align-items: center;
 }
 
-.nav_vkladok {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
 
-.nav-ul_vkladok {
-  list-style: none;
-  display: flex;
-}
-
-.nav-ul-li_vkladok {
-  margin: 0 15px;
-  position: relative; /* Добавлено для управления подменю */
-}
-
-.nav-ul-li-a_vkladok {
-  color: #dddddd;
-  text-decoration: none;
-  font-size: 19px;
-  padding: 15px;
-  display: block;
-}
-
-.nav-ul-li-a_vkladok:hover {
-  background-color: darkblue;
-}
-
-/* Стили для подменю */
-.nav-ul-li_vkladok .dropdown {
-  display: none; /* Скрываем подменю по умолчанию */
-  position: absolute;
-  top: 100%; /* Располагаем подменю под родительским пунктом */
-  left: 0;
-  background-color: #141841;
-  padding: 10px 0;
-  min-width: 200px;
-  z-index: 100;
-}
-
-.nav-ul-li_vkladok:hover > .dropdown {
-  display: block; /* Показываем подменю при наведении на родительский пункт */
-}
-
-.dropdown > li {
-  position: relative;
-}
-
-.dropdown > li:hover > .dropdown {
-  display: block;
-  left: 100%; /* Показываем вложенное подменю справа от родительского */
-  top: 0;
-}
-
-.dropdown a {
-  color: #dddddd;
-  padding: 10px 20px;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: darkblue;
-}
 
 
 
@@ -1112,19 +1027,7 @@ a {
 
 /* Ваши существующие стили */
 
-/* Гамбургер-меню */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
 
-.menu-toggle .bar {
-  background-color: #ddd;
-  height: 3px;
-  width: 25px;
-  margin: 4px 0;
-}
 
 /* Стили для основного меню */
 .nav_vkladok {
@@ -1238,5 +1141,71 @@ a {
   .social-icons1 a {
     font-size: 20px;
     margin-right: 10px;
+  }
+}
+
+
+
+
+
+
+.main_licenze {
+  padding: 2em;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em; /* Уменьшенный промежуток между элементами */
+}
+
+.document-item {
+  background-color: #f9f9f9;
+  padding: 0.5em; /* Уменьшенные отступы внутри блока */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1em; /* Уменьшенный размер шрифта */
+}
+
+.dobav {
+  font-size: 18px;
+}
+
+
+
+
+.agency-name {
+  color: #dddddd;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav_vkladok, .social-icons1 {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    flex: 1;
+  }
+
+  .agency-name {
+    font-size: 12px;
   }
 }

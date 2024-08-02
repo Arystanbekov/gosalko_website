@@ -1,7 +1,4 @@
-// script.js
-
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    const nav = document.querySelector('.nav_vkladok');
-    nav.classList.toggle('show');
-  });
-  
+document.querySelector('.burger-menu').addEventListener('click', function() {
+  document.querySelector('.nav_vkladok').classList.toggle('active');
+  document.querySelector('.social-icons1').classList.toggle('active');
+});
